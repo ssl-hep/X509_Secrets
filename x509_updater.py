@@ -77,7 +77,7 @@ print("Delete existing secret if present")
 try:
     client.CoreV1Api().delete_namespaced_secret(
         namespace=pod_namespace, name=secret_name)
-except kubernetes.client.rest.ApiException as api_exception:
+except kubernetes.client.rest.ApiException:
     print("No existing secret to delete")
 
 

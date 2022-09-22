@@ -1,0 +1,5 @@
+# Requirements needed to dev this code - also install requirements.txt
+pytest>=5.2
+coverage>=5.2
+codecov==2.1.8
+flake8>=3.8
